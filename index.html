@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/application.css" rel="stylesheet">
+    <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="js/vendor/underscore.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="main-content">
+        <!-- The page width is 817px -->
+        <!-- Example of using the form CSS to help you out. -->
+        <form id="new">
+            <div>
+                <label>Full Name</label>
+                <input id="name" name="name" type="text" required />
+            </div>
+            <div>
+                <label>Photo URL</label>
+                <input id="photo" name="photo_url" />
+            </div>
+            <button type="submit">Create</button>
+        </form>
+        <hr />
+        <!-- Employee list goes here. There is initial data for you in application.js -->
+        <div class="celeb-list">
+
+        </div>
+    </div>
+    <script type="text/template" id="celeb-template">
+        <%_.each(celebs, function(celeb) {%>
+            <div class="card">
+            <img id="close-btn" src="img/close.png" />
+                    <div class="photo"><img src="<%= celeb.photo_url %>"></div>
+                    <div class="name"><p><%- celeb.name %></p></div>
+            </div>
+            <% }); %>
+    </script>
+</body>
+
+</html>

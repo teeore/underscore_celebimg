@@ -1,0 +1,59 @@
+/* We've given you some basic styles to save you time. */
+body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #333333; background-color: #f2f2f2; }
+#main-content { width:705px; padding:25px; margin:30px auto; border:1px solid #d3d3d3; background-color: white; }
+form div { margin-bottom:10px; }
+form label { width:70px; text-align:right; color:#888888; display:inline-block; font-size:12px; }
+form input { width:179px; margin-left:5px; padding:3px; border:1px solid #888888; border-radius:3px; display:inline-block; font-size:12px; }
+form button { margin-left:80px; display: inline-block; padding: 2px 10px 2px 10px; background-image: linear-gradient(to bottom, #4e92ba, #307ca9); color:white; border:1px solid; border-color: #307ca9 #307ca9 #1f506d; border-radius:3px; font-size:13px; }
+
+
+/* Card font: 13px and #333333 */
+
+/* Put your styles here */
+
+.celeb-list {
+	overflow: auto;
+	position: relative;
+}
+
+.card {
+    width: 223px;
+    height: 83px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font: bold 12px/150% Arial, Helvetica, sans-serif;
+    color: #333333;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+#close-btn {
+ position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+}
+
+.photo {
+	width: 83px;
+	height: 81px;
+	float: left;
+	  border-right: 1px solid #ccc;
+}
+
+.photo img {
+	height: 70px;
+	width: 70px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.name {
+	width: 120px;
+	float: left;
+	margin-top: 6px;
+	margin-left: 7px;
+}
